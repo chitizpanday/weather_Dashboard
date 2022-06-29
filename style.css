@@ -1,0 +1,57 @@
+.container{
+    background-color:beige;
+    height:800px;
+    border: 2px solid gray;
+    
+}
+#maindash{
+    height: 60px;
+    background-color:rgb(15, 68, 89);
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    padding-top: 5px;
+}
+
+#dash2{
+    
+    justify-content:space-evenly;
+}
+.col-3{
+    border: 2px solid grey;
+    height: 500px;  
+    background-color: skyblue;
+}
+
+.col-8{
+    border: 2px solid grey;
+    height: 200px;
+    margin-left: 0;
+    background-color: skyblue;
+}
+
+#lowdash{
+    border: 2px solid gray;
+    height: 150px;
+    justify-content: space-around;
+    
+}
+#one{
+    background-color: rgb(3, 3, 83);
+
+}
+#two{
+    background-color:rgb(3, 3, 83);
+}
+#three{
+    background-color: rgb(3, 3, 83);
+}
+#four{
+    background-color: rgb(3, 3, 83);
+}
+#five{
+    background-color: rgb(3, 3, 83);
+}
