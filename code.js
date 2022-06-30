@@ -5,3 +5,9 @@ function getInfo(){
 
 }
 //get weather details from API using javascript promise/ fetch method
+
+fetch("https://api.openweathermap.org/data/2.5/forecast?q=newName&appid=e3e7f409d7554da4b1757864ff62f226")
+.then(response=>response.json())
+.than(data=>{
+    
+})
