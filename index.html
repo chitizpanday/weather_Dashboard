@@ -11,53 +11,58 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-12" id="maindash">Weather Dashboard</div> 
+        <div class="col-12" id="maindash"> Weather Dashboard</div> 
       </div>
 
       <div class="row" id="dash2">
-        <div class="col-3">
-          <p>Search for a City:</p>
+        <div class="col-sm-3">
+          <h4>Search for a City:</h4>
           <textarea id="searchCity"></textarea> <br>
-          <button id="searchButton" onclick="getInfo()">Search</button>
-          <p id="city">Dallas</p>
+          <button id="searchButton" onclick="getInfo()">Search</button> <br></br>
+          <textarea id="row1">city1</textarea>
+          <textarea id="row2">city2</textarea>
+          <textarea id="row3">city3</textarea>
+          <textarea id="row4">city4</textarea>
+          <textarea id="row5">city5</textarea>
         </div>
-        <div class="col-8">
+        <div class="col-sm-8">
           <div class="row" id="lowdash">
-            <p> Future Forcast</p>
-            <div class="col-2" id="one">
+            <h4> Future Forcast</h4>
+            <div class="col-sm-2" id="one">
               <div class="day">Monday</div>
-              <img src="" alt="weather icon" class="wIcon">
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
             </div>
-            <div class="col-2" id="two">
+            <div class="col-sm-2" id="two">
               <div class="day">Tuesday</div>
-              <img src="" alt="weather icon" class="wIcon">
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
             </div>
-            <div class="col-2" id="three">
+            <div class="col-sm-2" id="three">
               <div class="day">Wednesday</div>
-              <img src="" alt="weather icon" class="wIcon">
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
             </div>  
-            <div class="col-2" id="four">
+            <div class="col-sm-2" id="four">
               <div class="day">Thursday</div>
-              <img src="" alt="weather icon" class="wIcon">
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
             </div>
-            <div class="col-2" id="five">
+            <div class="col-sm-2" id="five">
               <div class="day">Friday</div>
-              <img src="" alt="weather icon" class="wIcon">
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
             </div>
       
           </div>
           <div class="row">
-            <div class="col-12" id="currentWeather">
-              <p>Current Weather</p>
-              <div class="date" id="date">July 1 2022</div>
-              <div class="time" id="time">0600 <span id="AM-PM">AM</span></div>
+            <div class="col-sm-12" id="currentWeather">
+              <h4>Current Weather</h4>
+              <h4 id="CITY">Dallas</h4>
+              <div class="date" id="date"></div>
+                <h6 id="time">time</h6>
               <div class="others" id="currentWeatherItems">
                 <div class="weatherItems">
                   <div>Humidity</div>
                   <div>64%</div>
                 </div>
                 <div class="weatherItems">
-                  <div>Pressure</div>
+                  <div>Temperature</div>
                   <div>3.34 psc</div>
                 </div>
                 <div class="weatherItems">

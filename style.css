@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 #maindash{
     height: 60px;
@@ -12,7 +17,7 @@
 }
 .container{
     background-color:beige;
-    height:800px;
+    height:565px;
     border: 2px solid gray;
     color: white;
     font-weight: bolder;
@@ -22,20 +27,31 @@
 #dash2{
     
     justify-content:space-evenly;
+    
 }
-.col-3{
+.col-sm-3{
     border: 1px solid grey;
     height: 500px;  
     background-color: skyblue;
+    
+    /* display: flex;
+    align-content: center;
+    justify-content: center; */
 }
 
-.col-8{
+#searchButton:hover{
+    background-color: rgb(15, 68, 89);
+    color: white;
+}
+
+.col-sm-8{
     border: 1px solid grey;
     height: 500px;
     margin-left: 0;
     background-color: skyblue;
     align-self: flex-end;
-}
+   }
+
 
 #lowdash{
     /* border: 1px solid gray; */
@@ -43,30 +59,64 @@
     justify-content: space-around;
     margin-bottom: 40px;
 }
+
 #currentWeather{
     background-color:rgb(15, 68, 89);
-    height:235px ;
-    
+    height:263px;
+    background-image: url(https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2VhdGhlcnxlbnwwfHwwfHw%3D&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: -55px;
+    color:black;
+}
+#currentWeather h4{
+    color: white;
+}
+#date{
+    color: white;
+}
+#time{
+    color: white;
+}
+#currentWeatherItems{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 60px;
+}
+.weatherItems{
+    background-color: skyblue;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
 }
 
+#CITY{
+    color: white;
+}
 #one{
-    background-color: rgb(3, 3, 83);
+    background-color:rgb(15, 68, 89);
     height:150px ;
+    border-radius: 10px;
 
 }
 #two{
-    background-color:rgb(3, 3, 83);
+    background-color:rgb(15, 68, 89);
     height:150px ;
+    border-radius: 10px;
 }
 #three{
-    background-color: rgb(3, 3, 83);
+    background-color: rgb(15, 68, 89);
     height:150px ;
+    border-radius: 10px;
 }
 #four{
-    background-color: rgb(3, 3, 83);
+    background-color: rgb(15, 68, 89);
     height:150px ;
+    border-radius: 10px;
 }
 #five{
-    background-color: rgb(3, 3, 83);
+    background-color: rgb(15, 68, 89);
     height:150px ;
+    border-radius: 10px;
 }
