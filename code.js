@@ -1,8 +1,3 @@
-//var TIME= document.getElementById("time");
-//var DATE= document.getElementById("date");
-var CURRENTWEATHERITEMS =document.getElementById("currentWeatherItems");
-
-
 
 
 //implementing setInterval function which can be called in a set interval, here, we are calling the function every 1 second (1000)
@@ -15,7 +10,6 @@ function currentTime(){
 setInterval(currentTime,1000);
 
 
-
 function currdate(){
     var today= new Date();
    var month = today.getMonth()+1;
@@ -25,14 +19,25 @@ function currdate(){
    document.getElementById("date").innerHTML=currentDate;
 }
 currdate()
+
+//reflect the searched city name in the today's weather tab and populate the history of the searched cities
+
+
 function getInfo(){
-    //var newName is going to collect data from the input field
-    var newName = document.getElementById("searchCity");
-    document.getElementById("CITY").innerHTML=newName.value
-    document.getElementById("row1").innerHTML=newName.value
-  var cityName = document.getElementById("city").innerHTML=newName.value
+var newName = document.getElementById("searchCity");
+document.getElementById("CITY").innerHTML=newName.value
+var newName = document.getElementById("searchCity");
+var cityList= document.getElementById("cities");
+if(newName.value!=""){
+var makeLi=document.createElement("li");
+makeLi.appendChild(document.createTextNode(newName.value));
+cityList.appendChild(makeLi);
+newName.value="";
 }
-//  function getInfo(){
+}
+
+
+
 //     var  newName = document.getElementById("searchCity").value;
 //     var jsonnewName=JSON.stringify(newName);
 //     localStorage.setItem("row1", jsonnewName);
@@ -48,22 +53,43 @@ function getInfo(){
 // localStorage.setItem ("label2", jsontext2);
 // }
 
-   var APIkey = 'e3e7f409d7554da4b1757864ff62f226'
+   var APIkey = '26703a1ad097cf02cf4d6f03136ef899'
+
+
 //get weather details from API using javascript promise/ fetch method
-getData()
-function getData(){
-fetch(`https://api.openweathermap.org/data/2.5/forecast?q=dallas&appid=${ APIkey}`)
- .then(response=>response.json())
- .then(data=>{
-    console.log (data)
+getWeatherData()
+function getWeatherData(){
+fetch(`https://api.openweathermap.org/data/2.5/forecast?q=denver&units=imperial&appid=${APIkey}`)
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+console.log(data);
+
+showWeatherData(data)
 })
 }
+//it could also be written in a fat arrow as://  .then(response=>response.json())
+//  .then(data=>console.log (data))
 
-
-
-// .then(function(response){
-//     return response.json();
-// })
-// .then(function(result){
-// console.log(result);
-// });
+ function showWeatherData(data){
+var{humidity, temp, Wind, uv_inex} = data.current;
+document.getElementById("currentWeatherItems").innerHTML=
+` <div class="others" id="currentWeatherItems">
+<div class="weatherItems">
+  <div>Humidity</div>
+  <div></div>
+</div>
+<div class="weatherItems">
+  <div>Temperature</div>
+  <div>(data.list[].main.temp)</div>
+</div>
+<div class="weatherItems">
+  <div>Wind Speed</div>
+  <div>10 mph</div>
+</div>
+<div class="weatherItems">
+  <div>UV-Index</div>
+  <div>21.2</div>`;
+ }
+ 
