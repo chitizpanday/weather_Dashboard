@@ -38,7 +38,17 @@
     align-content: center;
     justify-content: center; */
 }
+#searchCity{
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
+#searchButton{
+    border-radius: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 #searchButton:hover{
     background-color: rgb(15, 68, 89);
     color: white;
@@ -62,12 +72,12 @@
 
 #currentWeather{
     background-color:rgb(15, 68, 89);
-    height:263px;
+    height:244px;
     background-image: url(https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2VhdGhlcnxlbnwwfHwwfHw%3D&w=1000&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    margin-top: -55px;
+    margin-top: -35px;
     color:black;
 }
 #currentWeather h4{
@@ -89,34 +99,16 @@
     padding: 5px;
     color: white;
     border-radius: 10px;
+    margin: 15px;
 }
 
 #CITY{
     color: white;
 }
-#one{
-    background-color:rgb(15, 68, 89);
-    height:150px ;
-    border-radius: 10px;
 
-}
-#two{
+.future-forecast {
     background-color:rgb(15, 68, 89);
-    height:150px ;
+    height:215px ;
     border-radius: 10px;
-}
-#three{
-    background-color: rgb(15, 68, 89);
-    height:150px ;
-    border-radius: 10px;
-}
-#four{
-    background-color: rgb(15, 68, 89);
-    height:150px ;
-    border-radius: 10px;
-}
-#five{
-    background-color: rgb(15, 68, 89);
-    height:150px ;
-    border-radius: 10px;
+    font-size: smaller;
 }

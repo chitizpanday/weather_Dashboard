@@ -18,7 +18,7 @@
         <div class="col-sm-3">
           <h4>Search for a City:</h4>
           <textarea id="searchCity"></textarea> <br>
-          <button id="searchButton" onclick="getInfo()">Search</button> <br></br>
+          <button id="searchButton" onclick="getInfo()"> Search </button> <br></br>
           <div>
             <ul id="cities"></ul>
           </div>
@@ -27,31 +27,47 @@
           <div class="row" id="lowdash">
             <h4> Future Forcast</h4>
             <div class="col-sm-2" id="one">
-              <div class="day">Monday</div>
+              <div class="day">3/31/2021</div>
               <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+              <p>Temp: 73.72</p>
+              <p>Wind: 9.53 MPH</p>
+              <p>Humidity: 66%</p>
+
             </div>
             <div class="col-sm-2" id="two">
-              <div class="day">Tuesday</div>
+              <div class="day">3/31/2021</div>
               <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+              <p>Temp: 73.72</p>
+              <p>Wind: 9.53 MPH</p>
+              <p>Humidity: 66%</p>
             </div>
             <div class="col-sm-2" id="three">
-              <div class="day">Wednesday</div>
+              <div class="day">3/31/2021</div>
               <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+              <p>Temp: 73.72</p>
+              <p>Wind: 9.53 MPH</p>
+              <p>Humidity: 66%</p>
             </div>  
             <div class="col-sm-2" id="four">
-              <div class="day">Thursday</div>
+              <div class="day">3/31/2021</div>
               <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+              <p>Temp: 73.72</p>
+              <p>Wind: 9.53 MPH</p>
+              <p>Humidity: 66%</p>
             </div>
             <div class="col-sm-2" id="five">
-              <div class="day">Friday</div>
+              <div class="day">3/31/2021</div>
               <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+              <p>Temp: 73.72</p>
+              <p>Wind: 9.53 MPH</p>
+              <p>Humidity: 66%</p>
             </div>
       
           </div>
           <div class="row">
             <div class="col-sm-12" id="currentWeather">
               <h4>Current Weather</h4>
-              <h4 id="CITY">Dallas</h4>
+              <h4 id="CITY">Denver</h4>
               <div class="date" id="date"></div>
                 <h6 id="time">time</h6>
               <div class="others" id="currentWeatherItems">
@@ -61,15 +77,15 @@
                 </div>
                 <div class="weatherItems">
                   <div>Temperature</div>
-                  <div>3.34 psc</div>
+                  <div></div>
                 </div>
                 <div class="weatherItems">
                   <div>Wind Speed</div>
-                  <div>10 mph</div>
+                  <div></div>
                 </div>
                 <div class="weatherItems">
                   <div>UV-Index</div>
-                  <div>21.2</div>
+                  <div id="uv"></div>
                 </div>
               </div>
             </div>
@@ -80,6 +96,7 @@
       </div>
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="./code.js"></script>  
   </body>
