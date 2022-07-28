@@ -108,7 +108,32 @@
 
 .future-forecast {
     background-color:rgb(15, 68, 89);
-    height:215px ;
+    height:180px ;
     border-radius: 10px;
     font-size: smaller;
+}
+
+
+.recent-city {
+    cursor: pointer;
+    list-style: none;
+    width: 60px;
+    justify-content: center;
+}
+.recent-city:hover {
+    background-color:  rgb(15, 68, 89);
+    color: white;
+    border-radius: 6px;
+    width:fit-content;
+}
+#curCity{
+    font-size: 25px;
+    font-weight: lighter;
+    /* padding-left: 160px;
+    padding-bottom: 1000px;
+    margin-top: 0px; */
+}
+#img{
+    height: 252px;
+    margin-left: 0px;
 }
