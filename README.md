@@ -18,4 +18,4 @@ The URL of the deployed site is https://chitizpanday.github.io/weather_Dashboard
 
 The URL of the Github is https://github.com/chitizpanday/weather_Dashboard
 
-The screenshot of the application 
+The screenshot of the application ![Screenshot (51)](https://user-images.githubusercontent.com/105695567/181409218-c53bf593-8277-4c6b-8ff0-976ef269ff22.png)
